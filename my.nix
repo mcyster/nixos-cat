@@ -27,7 +27,6 @@
     eclipses.eclipse-sdk
     gimp
     keybase
-    steam
     python37Full
     pypi2nix
   ];

@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./my.nix
+      ./steam.nix
       ./extole.nix
       ./tunnel-cyster-com.nix
     ];
