@@ -27,8 +27,8 @@
     eclipses.eclipse-sdk
     gimp
     keybase
-    python37Full
     pypi2nix
+    xdg-desktop-portal-gtk
   ];
 
   environment.interactiveShellInit = ''
