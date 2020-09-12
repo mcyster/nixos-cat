@@ -13,5 +13,6 @@
     python38Packages.pygobject3
     python38Packages.tkinter
     python38Packages.pyglet
+    jetbrains.pycharm-community
   ];
-}
+} 

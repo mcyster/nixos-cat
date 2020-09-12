@@ -14,6 +14,7 @@
       ./steam.nix
       ./extole.nix
       ./tunnel-cyster-com.nix
+      #./print3d.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
