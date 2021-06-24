@@ -9,12 +9,13 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./my.nix
-      ./python.nix
-      ./minecraft.nix
-      ./steam.nix
       ./extole.nix
       ./tunnel-cyster-com.nix
+      #./python.nix
       #./print3d.nix
+      #./minecraft.nix
+      #./unreal.nix
+      #./steam.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -37,7 +38,7 @@
   # services.xserver.videoDrivers = [ "nouveau" ];
   services.xserver.videoDrivers = [ "nvidia" ];
   services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome3.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
   services.xserver.displayManager.gdm.wayland = false;
 
   system.autoUpgrade.enable = true;

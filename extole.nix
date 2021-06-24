@@ -15,6 +15,7 @@
   '';
 
   networking.firewall.enable = true;
+  #networking.firewall.allowedTCPPorts = [ 25564 ];
 
   security.sudo.wheelNeedsPassword = false;
 
@@ -32,15 +33,18 @@
   ];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.extraUsers.mcyster = {
-     isNormalUser = true;
-     uid = 2042;
-     group = "mcyster";
-     extraGroups = [ "wheel" "audio" "video" "systemd-journal" "systemd-network" "dialout" ];
+  users.users = {
+     mcyster = {
+       uid = 2042;
+       group = "mcyster";
+       isNormalUser = true;
+       extraGroups = [ "wheel" "audio" "video" "systemd-journal" "systemd-network" "dialout" ];
+     };
   };
 
-  users.extraGroups.mcyster = {
-    gid = 2042;
+  users.users.autossh = {
+      isSystemUser = true;
   };
 
+  users.groups.mcyster.gid = 2042;
 }

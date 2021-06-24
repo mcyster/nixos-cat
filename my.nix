@@ -27,8 +27,17 @@
     eclipses.eclipse-sdk
     gimp
     keybase
-    pypi2nix
+    #pypi2nix
     xdg-desktop-portal-gtk
+    screen
+    usbutils
+    #arduino
+    #arduino-cli
+    #gcc
+    #gtk3
+    #gtkmm3
+    #blender
+    #f3
   ];
 
   environment.interactiveShellInit = ''
@@ -48,5 +57,4 @@
   environment.variables.EDITOR = pkgs.lib.mkOverride 0 "vim";
   environment.variables.BROWSER = pkgs.lib.mkOverride 0 "chromium";
   #programs.bash.enableCompletion = true;
-
 }
