@@ -27,13 +27,13 @@
     eclipses.eclipse-sdk
     gimp
     keybase
-    #pypi2nix
     xdg-desktop-portal-gtk
     screen
     usbutils
-    #arduino
-    #arduino-cli
-    #gcc
+    #pypi2nix
+    arduino
+    arduino-cli
+    gcc
     #gtk3
     #gtkmm3
     #blender

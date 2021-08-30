@@ -1,19 +1,19 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = 
-# let 
-#    myPythonPackages = pythonPackages: with pythonPackages; [
-#    tkinter
-#    ]; 
-#  in
-    with pkgs; [
+  environment.systemPackages = with pkgs; [
     python38Full
-#    (python38.withPackages python38Packages.pygobject3)
-    python38Packages.pygobject3
-    python38Packages.tkinter
-    python38Packages.pyglet
-    python38Packages.matplotlib
-    jetbrains.pycharm-community
+    (python38.withPackages(ps: with ps; [
+       numpy
+       requests
+    ]))
+#    python38Packages.pandas
+#    python38Packages.requests
+#    python38Packages.pygobject3
+#    python38Packages.tkinter
+#    python38Packages.pyglet
+#    python38Packages.matplotlib
+#    jetbrains.pycharm-community
   ];
 } 
+

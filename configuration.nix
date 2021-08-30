@@ -11,9 +11,9 @@
       ./my.nix
       ./extole.nix
       ./tunnel-cyster-com.nix
-      #./python.nix
-      #./print3d.nix
-      #./minecraft.nix
+      ./python.nix
+      ./print3d.nix
+      ./minecraft.nix
       #./unreal.nix
       #./steam.nix
     ];
